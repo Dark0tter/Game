@@ -1,0 +1,11 @@
+{
+  "name": "rule-museum",
+  "version": "1.0.0",
+  "description": "A mobile-first puzzle prototype where every gallery hides a rule.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "test": "node --test",
+    "lint": "node --check app.js && node --check game.js && node --check sw.js"
+  }
+}

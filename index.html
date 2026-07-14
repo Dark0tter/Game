@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161320" />
+    <title>Rule Museum</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero card">
+        <div>
+          <p class="eyebrow">Single-player • offline-first • mobile-first</p>
+          <h1>The Rule Museum</h1>
+          <p class="subtitle">Observe examples, probe a mystery piece, infer the hidden rule, and curate the right artifacts.</p>
+        </div>
+        <div class="hero-actions">
+          <button id="campaignTab" class="chip chip-active">Campaign</button>
+          <button id="dailyTab" class="chip">Daily</button>
+          <button id="storeButton" class="chip">Store</button>
+        </div>
+      </header>
+
+      <section class="status-grid">
+        <article class="card stat">
+          <span class="label">Progress</span>
+          <strong id="progressValue">0 / 12</strong>
+        </article>
+        <article class="card stat">
+          <span class="label">Daily Streak</span>
+          <strong id="streakValue">0 days</strong>
+        </article>
+        <article class="card stat">
+          <span class="label">Weekly Pack</span>
+          <strong id="weeklyPackValue">Curator's Cut</strong>
+        </article>
+      </section>
+
+      <main class="main-grid">
+        <section class="card panel">
+          <div class="panel-top">
+            <div>
+              <p id="levelFamily" class="eyebrow">Onboarding</p>
+              <h2 id="levelTitle">Level 1</h2>
+            </div>
+            <button id="restartButton" class="chip">Restart</button>
+          </div>
+          <p id="levelPrompt" class="level-copy"></p>
+          <div class="callout" id="levelTeaching"></div>
+
+          <div class="examples-grid">
+            <section>
+              <h3>Accepted examples</h3>
+              <div id="acceptedExamples" class="artifact-grid artifact-grid-small"></div>
+            </section>
+            <section>
+              <h3>Rejected examples</h3>
+              <div id="rejectedExamples" class="artifact-grid artifact-grid-small"></div>
+            </section>
+          </div>
+
+          <div class="toolbar">
+            <button id="probeButton" class="primary">Use Probe</button>
+            <button id="hintButton" class="secondary">Watch sponsor reel for hint</button>
+          </div>
+          <p id="statusMessage" class="status-message">Tap cards to select the pieces you believe belong in this gallery.</p>
+
+          <div id="candidateGrid" class="artifact-grid"></div>
+
+          <div class="footer-actions">
+            <button id="submitButton" class="primary primary-wide">Submit Curation</button>
+          </div>
+        </section>
+
+        <aside class="card side-panel">
+          <section>
+            <h3>Core loop</h3>
+            <ol>
+              <li>Observe the labeled examples.</li>
+              <li>Probe one unknown artifact if needed.</li>
+              <li>Infer the hidden rule.</li>
+              <li>Submit your curation.</li>
+            </ol>
+          </section>
+          <section>
+            <h3>AI-ready hints</h3>
+            <p id="hintText">Hints stay deterministic by default. If you later wire an AI hint endpoint, it can plug into this same button.</p>
+          </section>
+          <section>
+            <h3>Optional upgrades</h3>
+            <ul>
+              <li>No forced paywall on campaign progression.</li>
+              <li>Rewarded hint flow only.</li>
+              <li>Future IAP slots: ad-free pass, theme packs.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Session notes</h3>
+            <div id="sessionNotes" class="notes"></div>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <dialog id="rewardDialog" class="dialog">
+      <form method="dialog" class="dialog-body">
+        <h3>Sponsor Reel</h3>
+        <p id="rewardDialogText">Support free play to unlock a hint.</p>
+        <button id="rewardDialogAction" class="primary" value="default">Continue</button>
+      </form>
+    </dialog>
+
+    <dialog id="storeDialog" class="dialog">
+      <form method="dialog" class="dialog-body">
+        <h3>Museum Store</h3>
+        <ul>
+          <li>Ad-free curator pass (future IAP slot)</li>
+          <li>Theme packs for new gallery looks</li>
+          <li>Never required for campaign progression</li>
+        </ul>
+        <button class="primary">Close</button>
+      </form>
+    </dialog>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

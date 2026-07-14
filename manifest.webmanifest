@@ -1,0 +1,17 @@
+{
+  "name": "Rule Museum",
+  "short_name": "Museum",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#110f1a",
+  "theme_color": "#161320",
+  "description": "A mobile-first hidden-rule puzzle prototype with deterministic hints and offline play.",
+  "icons": [
+    {
+      "src": "/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
