@@ -1,6 +1,6 @@
 # Game
 
-## Concept: **Shadow Signal**
+## Concept: Shadow Signal
 
 Shadow Signal is a turn-based competitive mind game built around prediction, bluffing, and counter-play. Each round, both players secretly choose one action, then reveal at the same time. The goal is to out-think the opponent over several rounds instead of relying on fast reactions or random luck.
 
