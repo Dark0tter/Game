@@ -166,9 +166,8 @@ function handleSubmit() {
       const streak = completeDaily(state);
       elements.statusMessage.textContent += ` Daily streak: ${streak.count}.`;
     } else {
-      nextLevel(state);
-      const next = getCurrentLevel(state);
-      elements.statusMessage.textContent += next ? ` Next up: ${next.title}.` : ' Campaign complete.';
+      const advanced = nextLevel(state);
+      elements.statusMessage.textContent += advanced ? ` Next up: ${getCurrentLevel(state).title}.` : ' Campaign complete.';
     }
   } else {
     const misses = result.acceptedIds.filter((id) => !state.selectedIds.has(id)).length;
@@ -189,7 +188,6 @@ elements.campaignTab.addEventListener('click', () => {
 
 elements.dailyTab.addEventListener('click', () => {
   setMode(state, 'daily');
-  state.levels = [buildDailyChallenge()];
   elements.statusMessage.textContent = 'Daily exhibit loaded.';
   render();
 });

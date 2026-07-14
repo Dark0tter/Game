@@ -96,12 +96,12 @@ export const CAMPAIGN_LEVELS = [
   level('level-2', 'The Prime Archive', 'prime', ['a1', 'a3'], ['a2', 'a4'], ['a5', 'a6', 'a7', 'a9', 'a10', 'a11'], 'Prime values only.', 'Teaching level: the badge number matters more than appearance.'),
   level('level-3', 'The Echo Hall', 'echo', ['a2', 'a5'], ['a1', 'a3'], ['a8', 'a9', 'a10', 'a11', 'a12', 'a16'], 'Only pieces that echo on probe belong.', 'Teaching level: use your probe if a behavior-based rule is unfamiliar.'),
   level('level-4', 'The Stripe Salon', 'striped', ['a1', 'a3'], ['a4', 'a6'], ['a7', 'a8', 'a12', 'a14', 'a15', 'a17'], 'Pattern matters now.', 'Some visual rules ignore color entirely.'),
-  level('level-5', 'The Even Atrium', 'even', ['a2', 'a4'], ['a3', 'a5'], ['a6', 'a8', 'a10', 'a12', 'a14', 'a18'], 'Even values only.', 'Probe is optional here; the rule can be solved from examples.'),
+  level('level-5', 'The Even Atrium', 'even', ['a2', 'a4'], ['a3', 'a5'], ['a5', 'a6', 'a8', 'a10', 'a11', 'a14'], 'Even values only.', 'Probe is optional here; the rule can be solved from examples.'),
   level('level-6', 'The Orbit Passage', 'orbit', ['a3', 'a6'], ['a1', 'a2'], ['a9', 'a12', 'a15', 'a17', 'a18', 'a10'], 'Belonging is determined by probe orbit.', 'Interaction rules are fair if you check the museum examples first.'),
   level('level-7', 'The Angular Vault', 'angular', ['a3', 'a5'], ['a2', 'a6'], ['a1', 'a7', 'a8', 'a9', 'a12', 'a16'], 'Angular silhouettes only.', 'Triangle, diamond, and hexagon all count as angular.'),
   level('level-8', 'The Fibonacci Gallery', 'fibonacci', ['a1', 'a3'], ['a2', 'a4'], ['a6', 'a7', 'a9', 'a10', 'a11', 'a17'], 'Fibonacci values only.', 'This gallery rewards number pattern recognition.'),
   level('level-9', 'The Pulse Conservatory', 'pulse', ['a1', 'a4'], ['a2', 'a3'], ['a7', 'a10', 'a13', 'a16', 'a18', 'a12'], 'Pulse behavior only.', 'The probe is your fastest certainty tool.'),
-  level('level-10', 'The Ember Logic Mix', 'warmPalette', ['a3', 'a6'], ['a5', 'a8'], ['a1', 'a7', 'a11', 'a12', 'a13', 'a17'], 'Warm palette returns with trickier overlap.', 'This one mixes warm colors with misleading prime badges.'),
+  level('level-10', 'The Ember Logic Mix', 'warmPalette', ['a3', 'a6'], ['a5', 'a8'], ['a1', 'a2', 'a7', 'a11', 'a14', 'a17'], 'Warm palette returns with trickier overlap.', 'This one mixes warm colors with misleading prime badges.'),
   level('level-11', 'The Curator’s Cut', 'prime', ['a5', 'a11'], ['a8', 'a10'], ['a1', 'a3', 'a9', 'a12', 'a15', 'a17'], 'Prime values with louder decoys.', 'Count carefully before relying on appearance.'),
   level('level-12', 'The Final Rotation', 'orbit', ['a6', 'a9'], ['a5', 'a11'], ['a3', 'a12', 'a15', 'a17', 'a18', 'a2'], 'Probe orbit determines the final room.', 'You know the museum now: observe, test, infer, solve.')
 ];
